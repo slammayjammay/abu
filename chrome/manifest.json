@@ -1,9 +1,9 @@
 {
   "name": "abu",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Abu",
   "manifest_version": 3,
-  "permissions": ["userScripts"],
+  "permissions": ["storage", "userScripts"],
   "host_permissions": ["<all_urls>"],
   "icons": {
     "128": "icon.png"
