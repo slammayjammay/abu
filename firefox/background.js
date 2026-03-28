@@ -21,7 +21,10 @@ async function email({ to, subject, body } = {}) {
 	const res = await fetch(URL, {
 		method: 'post',
 		credentials: 'include',
-		body: JSON.stringify({ model: { to, subject, body } }),
+		body: JSON.stringify({
+			secret_password_gobbledeygook: 'jpqan4tobquiegdh980wy4huq3bey9r0gohwkjbrt78q90',
+			model: { to, subject, body }
+		}),
 		headers: {
 			'Content-Type': 'application/json',
 			'Accept': 'application/json'
