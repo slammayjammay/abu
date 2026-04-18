@@ -5,6 +5,9 @@ browser.runtime.onUserScriptMessage.addListener((message, _, respond) => {
 	} else if (message.action === 'storage:set') {
 		browser.storage.local.set(message.args, () => respond(true));
 		return true;
+	} else if (message.action === 'storage:remove') {
+		browser.storage.local.remove(message.args, () => respond(true));
+		return true;
 	} else if (message.action === 'notifications:create') {
 		browser.notifications?.create(message.args, (...args) => respond(...args));
 		return true;
