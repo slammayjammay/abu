@@ -14,7 +14,10 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "abu@scottosmckenzie.com"
+      "id": "abu@scottosmckenzie.com",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
